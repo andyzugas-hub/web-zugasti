@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José Zugasti · Escultor</title>
+<meta name="description" content="José Zugasti (Eibar, 1952 - Donostia-San Sebastián, 2024). Sitio público sobre su legado artístico.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+  .hero-grid{ display:grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1.15fr); gap: clamp(2rem,5vw,4.5rem); align-items:start; }
+  .hero-video .eyebrow{ color: var(--oxide-dim); margin-bottom:1.4rem; }
+  .hero-video p{ color:#3a352a; max-width: 58ch; margin: 0 0 1rem; }
+  .video-frame{ position:relative; width:100%; aspect-ratio:16/9; margin-top:1.6rem; background:#000; }
+  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
+  .hero .tagline.poem{ font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.22rem, 1.7vw, 1.45rem); line-height: 1.55; color: var(--ink); max-width: 30ch; padding-left: 1.4rem; border-left: 1px solid var(--oxide); }
+  .hero .tagline.poem p{ margin: 0 0 0.9rem; }
+  .hero .tagline.poem footer{ font-style: normal; margin-top: 1rem; }
+  @media (max-width: 860px){ .hero-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header class="site">
+  <a href="index.html" class="mark">
+    <img class="firma-mark" src="assets/img/firma-zugasti.png" alt="Firma de José Zugasti">
+  </a>
+  <div class="header-actions">
+    <nav class="links" id="navLinks">
+      <a href="index.html" class="is-active">Inicio</a>
+      <a href="biografia.html">Biografía</a>
+      <a href="obra.html">Obra</a>
+      <a href="premios.html">Premios</a>
+      <a href="exposiciones.html">Exposiciones</a>
+      <a href="prensa.html">Prensa</a>
+      <a href="taller.html">Taller</a>
+      <a href="fundacion.html">Fundación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">MENU</button>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <img class="hero-visual" src="assets/img/portada.jpg" alt="Obra de José Zugasti" loading="eager" decoding="async">
+  <div class="wrap hero-copy hero-grid">
+   <div>
+    <div class="eyebrow hero-eyebrow">Artista multidisciplinar</div>
+    <blockquote class="tagline poem">
+      <p>“Me preocupa especialmente la falta de sentido, yo no llegué al Arte para crear envases….</p>
+      <p>….Deseo hacer Arte para encontraros, llegar a ser Cultura para vivir en ese abrazo….”</p>
+      <footer>José Zugasti, 1982</footer>
+    </blockquote>
+    <div class="years">1952 - 2024</div>
+   </div>
+   <div class="hero-video">
+    <div class="eyebrow">Quincena Musical 2024</div>
+    <p>José Zugasti fue el autor del cartel de la 85ª Quincena Musical de San Sebastián, en 2024. Fue uno de sus últimos trabajos: su salud ya era muy frágil, y falleció el 14 de diciembre de ese mismo año.</p>
+    <p>El festival presentó el cartel con este vídeo, un emotivo recorrido por su trayectoria artística.</p>
+    <div class="video-frame">
+      <iframe src="https://www.youtube-nocookie.com/embed/3RCOkg8Fx1E?rel=0" title="Quincena Musical 2024: José Zugasti" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+   </div>
+  </div>
+</section>
+
+<section class="contacto reveal" id="contacto">
+  <div class="wrap">
+    <div>
+      <p class="lead-line">Para consultas sobre la obra, cesiones, exposiciones o archivo, contactar por los siguientes canales.</p>
+    </div>
+    <div class="social">
+      <a href="mailto:info@josezugasti.com"><span class="s-left"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 6.5 12 13 21 6.5"/></svg>info@josezugasti.com</span> <span class="small">EMAIL</span></a>
+      <a href="https://www.instagram.com/jzugastia/" target="_blank" rel="noopener"><span class="s-left"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="0.9" fill="currentColor" stroke="none"/></svg>@jzugastia</span> <span class="small">INSTAGRAM</span></a>
+      <a href="https://www.facebook.com/jose.zugasti.9/" target="_blank" rel="noopener"><span class="s-left"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 8.5h-2a1.5 1.5 0 0 0-1.5 1.5v2H15l-.5 3H11.5v6h-3v-6H6.5v-3h2V9.5A4 4 0 0 1 12.5 5.5H15z"/></svg>José Zugasti</span> <span class="small">FACEBOOK</span></a>
+      <a href="http://www.youtube.com/channel/UCeoMvnB5boapN6mfcv-W1tw" target="_blank" rel="noopener"><span class="s-left"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="19" height="12" rx="3"/><path d="M10.5 9.5 15 12l-4.5 2.5z" fill="currentColor" stroke="none"/></svg>Canal</span> <span class="small">YOUTUBE</span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="credit">
+  <span>JOSÉ ZUGASTI ARIZMENDIARRIETA - EIBAR 1952 · DONOSTIA 2024</span>
+  <span>SITIO EN CONSTRUCCIÓN · BORRADOR LOCAL</span>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
