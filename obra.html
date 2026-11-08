@@ -9,6 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  :root{ --escultura: #35596b; }
+  .obra-tabs a.tab-escultura{ color: var(--escultura); font-weight: 600; }
+  .obra-tabs a.tab-escultura::after{ background: var(--escultura); }
+  .obra-tabs a.tab-escultura.is-active{ color: var(--escultura); }
+  #escultura > header{ border-bottom-color: var(--escultura); }
+  #escultura > header h3{ color: var(--escultura); }
+  #escultura .group-label{ color: var(--escultura); }
+</style>
 </head>
 <body>
 <header class="site">
@@ -43,7 +52,7 @@
         <a href="#todo" data-cat="todo">Ver todo</a>
         <a href="#acrilicos" data-cat="acrilicos">Acrílicos</a>
         <a href="#dibujos" data-cat="dibujos">Dibujos</a>
-        <a href="#escultura" data-cat="escultura">Esculturas</a>
+        <a href="#escultura" data-cat="escultura" class="tab-escultura">Esculturas</a>
         <a href="#grabados" data-cat="grabados">Grabados y litografías</a>
         <a href="#oleo" data-cat="oleo">Óleo y pintura matérica</a>
       </nav>
@@ -247,6 +256,17 @@
           <h3>Esculturas</h3>
           <span class="count">1984 - 2010 · 96 obras</span>
         </header>
+        <div class="group-label">Obra pública</div>
+        <div class="gallery">
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2001-eguzkitan-lemoa.jpg" alt="Eguzkitan · Lemoa, Bizkaia, 2001" loading="lazy" decoding="async"></button><figcaption><span class="y">2001</span>Eguzkitan · Lemoa, Bizkaia</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2001-peso-forma-ceuti.jpg" alt="El peso de la forma · Ceuti, Murcia, 2001" loading="lazy" decoding="async"></button><figcaption><span class="y">2001</span>El peso de la forma · Ceuti, Murcia</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-a-la-deriva-bilbao.jpg" alt="A la deriva · Ría de Bilbao, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>A la deriva · Ría de Bilbao</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-pinto-madrid.jpg" alt="Ayuntamiento de Pinto, Madrid, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>Ayuntamiento de Pinto, Madrid</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-transformacion-agurain.jpg" alt="Transformación · Agurain-Salvatierra, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>Transformación · Agurain-Salvatierra</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2005-flo-nua-palma.jpg" alt="Flo Nua · Palma de Mallorca, 2005" loading="lazy" decoding="async"></button><figcaption><span class="y">2005</span>Flo Nua · Palma de Mallorca</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2010-desarrollo-forma-donostia.jpg" alt="Desarrollo de la forma · Donostia, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Desarrollo de la forma · Donostia</figcaption></figure>
+          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2010-formen-dantza-eibar.jpg" alt="Formen Dantza · Ego-Gain, Eibar, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Formen Dantza · Ego-Gain, Eibar</figcaption></figure>
+        </div>
         <div class="group-label">Tiempo, espacio, humano · 1980-1990</div>
         <div class="gallery">
           <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/escultura-interior-1980-1990-1984-01.jpg" alt="Figura apoyada, 1984" loading="lazy" decoding="async"></button><figcaption><span class="y">1984</span>Figura apoyada</figcaption></figure>
@@ -346,17 +366,6 @@
           <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/escultura-interior-2005-2011-2009-05.jpg" alt="Escultura sin título, 2009" loading="lazy" decoding="async"></button><figcaption><span class="y">2009</span>Sin título</figcaption></figure>
           <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/escultura-interior-2005-2011-2010-01.jpg" alt="Escultura sin título, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Sin título</figcaption></figure>
           <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/escultura-interior-2005-2011-2010-02.jpg" alt="Escultura sin título, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Sin título</figcaption></figure>
-        </div>
-        <div class="group-label">Obra pública</div>
-        <div class="gallery">
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2001-eguzkitan-lemoa.jpg" alt="Eguzkitan · Lemoa, Bizkaia, 2001" loading="lazy" decoding="async"></button><figcaption><span class="y">2001</span>Eguzkitan · Lemoa, Bizkaia</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2001-peso-forma-ceuti.jpg" alt="El peso de la forma · Ceuti, Murcia, 2001" loading="lazy" decoding="async"></button><figcaption><span class="y">2001</span>El peso de la forma · Ceuti, Murcia</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-a-la-deriva-bilbao.jpg" alt="A la deriva · Ría de Bilbao, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>A la deriva · Ría de Bilbao</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-pinto-madrid.jpg" alt="Ayuntamiento de Pinto, Madrid, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>Ayuntamiento de Pinto, Madrid</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2002-transformacion-agurain.jpg" alt="Transformación · Agurain-Salvatierra, 2002" loading="lazy" decoding="async"></button><figcaption><span class="y">2002</span>Transformación · Agurain-Salvatierra</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2005-flo-nua-palma.jpg" alt="Flo Nua · Palma de Mallorca, 2005" loading="lazy" decoding="async"></button><figcaption><span class="y">2005</span>Flo Nua · Palma de Mallorca</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2010-desarrollo-forma-donostia.jpg" alt="Desarrollo de la forma · Donostia, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Desarrollo de la forma · Donostia</figcaption></figure>
-          <figure class="piece"><button type="button" class="shot"><img src="assets/img/obra/publica-2010-formen-dantza-eibar.jpg" alt="Formen Dantza · Ego-Gain, Eibar, 2010" loading="lazy" decoding="async"></button><figcaption><span class="y">2010</span>Formen Dantza · Ego-Gain, Eibar</figcaption></figure>
         </div>
         <a class="ref" href="https://aunamendi.eusko-ikaskuntza.eus/es/zugasti-arizmendiarrieta-jose/ar-152484/" target="_blank" rel="noopener" style="display:inline-flex; margin-top:1.6rem;">Aunamendi Entziklopedia</a>
       </div>
