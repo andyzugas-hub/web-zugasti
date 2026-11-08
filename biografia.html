@@ -9,6 +9,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  .bio-fig{ margin: 2.2rem auto 2.6rem; text-align:center; clear: both; }
+  .bio-fig .pics{ display:flex; gap: 0.9rem; justify-content:center; align-items:flex-end; }
+  .bio-fig img{ display:block; max-width:100%; max-height: 520px; width:auto; height:auto; box-shadow: 0 6px 24px rgba(0,0,0,0.08); }
+  .bio-fig .pics.pair img{ max-width: calc(50% - 0.45rem); max-height: 400px; }
+  .bio-fig figcaption{ font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.04em; color:#7c7461; margin-top: 0.8rem; }
+  .bio-fig.v{ width: 32%; margin: 0.4rem 0 1.4rem; clear: both; text-align:left; }
+  .bio-fig.v img{ width:100%; max-height:none; }
+  .bio-fig.v.left{ float:left; margin-right: 2rem; }
+  .bio-fig.v.right{ float:right; margin-left: 2rem; }
+  .bio-fig.v.right figcaption{ text-align:right; }
+  .bio-text::after{ content:""; display:block; clear:both; }
+  @media (max-width: 640px){
+    .bio-fig.v, .bio-fig.v.left, .bio-fig.v.right{ float:none; width:auto; margin: 2rem auto 2.2rem; text-align:center; }
+    .bio-fig.v img{ width:auto; max-width:100%; max-height: 420px; margin: 0 auto; }
+    .bio-fig.v.right figcaption{ text-align:center; }
+  }
+</style>
 </head>
 <body>
 <header class="site">
@@ -34,7 +52,7 @@
 <main class="page-main">
   <section class="bio reveal">
     <div class="wrap grid">
-      <div>
+      <div class="bio-text">
         <div class="section-head">
           <div class="eyebrow">01 · Biografía</div>
         </div>
@@ -47,37 +65,49 @@
 
         <p>En 1982 se instala definitivamente en San Sebastián, donde vive hasta su fallecimiento y donde nacen sus tres hijos. Participa en los tres certámenes de Arteder, Ferias de Arte Contemporáneo de Bilbao, y trabaja en su estudio de San Sebastián compaginando su trabajo individual con las clases de plástica.</p>
 
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-soldando-bicicleta-1986.jpg" alt="Trabajando en El hombre de la bicicleta en su taller, 1986. Foto: Juantxo Egaña" loading="lazy" decoding="async"></div><figcaption>Trabajando en El hombre de la bicicleta en su taller, 1986. Foto: Juantxo Egaña</figcaption></figure>
+
         <p>Preocupado por la figura humana, comienza a romper la forma exterior de sus cuadros, que aparecen poco a poco como trozos de paredes desconchadas. Sus curvas y grafismos figurativos le sugieren varillas de hierro de diferentes grosores, surgiendo de forma paulatina la tercera dimensión apoyándose en sus magníficos dibujos de carácter claramente expresionista. El dibujo acompañaría a Zugasti en toda su obra escultórica.</p>
+
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-dibujo-carboncillo.jpg" alt="Dibujo a carboncillo" loading="lazy" decoding="async"></div><figcaption>Dibujo a carboncillo</figcaption></figure>
 
         <p>En 1984 realiza su primera escultura figurativa, con varillas de alambre, siendo éste el material que utilizaría en todos sus procesos y etapas creativas: material humilde y pobre ligado a la actividad industrial de la localidad de su nacimiento. Ese mismo año contrae matrimonio con Yolanda Bernardo, quien le acompaña y apoya en su trayectoria vital y profesional.</p>
 
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-esculturas-figurativas-sala.jpg" alt="Esculturas de su etapa figurativa en una exposición" loading="lazy" decoding="async"></div><figcaption>Esculturas de su etapa figurativa en una exposición</figcaption></figure>
+
+        <figure class="bio-fig v right"><div class="pics"><img src="assets/img/bio-montaje-escultura-publica.jpg" alt="Durante el montaje de una de sus esculturas públicas" loading="lazy" decoding="async"></div><figcaption>Durante el montaje de una de sus esculturas públicas</figcaption></figure>
+
         <p>Tras el premio de pintura de Noveles de Gipuzkoa, gana otros premios como el C.A. Municipal de Vitoria y, ya en escultura, los premios Bancaixa de Valencia y Caja Vital de Álava. Más adelante la entidad Ría 2000 del Ayuntamiento de Bilbao premia ubicar su proyecto de obra pública <em>A la deriva</em> (2002) en el nuevo Bilbao, rememorando los astilleros de Euskalduna. A partir de aquí se suceden las oportunidades de instalar obras en espacios públicos: Lemoa (Bizkaia), Ayuntamiento de Pinto (Madrid), Ceutí (Murcia), Salvatierra (Álava), Palma de Mallorca, Donostia, y en su villa natal de Eibar.</p>
+
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-escultura-publica-nieve.jpg" alt="Una de sus esculturas en el espacio público" loading="lazy" decoding="async"></div><figcaption>Una de sus esculturas en el espacio público</figcaption></figure>
 
         <p>La obra de Zugasti se distancia de los modelos tradicionales para explorar nuevas posibilidades formales. Su aportación se sitúa en esta línea de renovación, introduciendo una escultura basada en la ligereza, la transparencia y la fragmentación.</p>
 
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-taller-anos-90.jpg" alt="José Zugasti en su taller" loading="lazy" decoding="async"></div><figcaption>José Zugasti en su taller</figcaption></figure>
+
         <p>La idea de la forma y su desarrollo en el espacio gravitatorio es fundamental para penetrar en la obra de Zugasti: conceptos como la representación visual del peso, la ligereza, la fragilidad e inestabilidad de los cuerpos grávidos son ideas clave en el devenir de sus trabajos. La supresión de la masa y la desnudez resultante en sus líneas y formas serán de aquí en adelante fundamentos importantes en su evolución. Distintos materiales en diversos grosores de alambres y aceros, las interacciones de estas formas y sus sugerencias en el lenguaje visual, sus relaciones con la línea y lo ortogonal que lo amarran, y al final también la huella del tiempo y la herida de esa época industrial, estética que marcó su infancia eibarresa.</p>
+
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-trabajando-alambre.jpg" alt="Trabajando el alambre en su taller" loading="lazy" decoding="async"></div><figcaption>Trabajando el alambre en su taller</figcaption></figure>
 
         <p>En 2011 problemas de salud le obligan e impulsan a cambiar de soportes creativos. Se asoma una nueva fase creativa: renace en una pintura que le permite trabajar soportes más llevaderos como las témperas y los acrílicos y, al tiempo, por su esencial interés en el movimiento, se interesa y penetra también en la videocreación. Es la mar de Lekeitio y, sobre todo, de Donostia —donde reside desde 1982 en contacto diario— la que le cautivará en esta nueva fase de vida creativa. Si primero fue la estética industrial eibarresa de su infancia y adolescencia la que le marcaba, será ahora la mar que visiona en sus paseos diarios, atraído por su diversidad de carácter y movimiento, inquietud siempre presente en su obra. Como en su fase anterior, prescinde de la masa cerrada y va descubriendo lo que él entiende como esencial: la forma y sus interacciones, su expresión y funcionamiento en la naturaleza y el espacio abierto, y al tiempo su metáfora con respecto a lo humano, en el variado abanico que reside entre la calma y la violencia.</p>
 
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-revisando-dibujos.jpg" alt="Revisando sus dibujos en el taller" loading="lazy" decoding="async"></div><figcaption>Revisando sus dibujos en el taller</figcaption></figure>
+
         <p>En sus últimos años navega ya por el mundo de las esferas, una idea total del universo donde micro y macrocosmos se funden en una misma evolución y desarrollo.</p>
+
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-taller-perfil.jpg" alt="En su taller, entre esculturas" loading="lazy" decoding="async"></div><figcaption>En su taller, entre esculturas</figcaption></figure>
 
         <p>En su dilatada trayectoria ha realizado numerosas muestras individuales, siendo representado sobre todo por la Galería Vanguardia de Bilbao. Entre sus retrospectivas destacan las de la Sala Kubo en Donostia (2009) y Portalea en Eibar, su lugar de nacimiento (2016). Ha participado asiduamente en ferias internacionales como Arco, London Art Fair, Berlín y Colonia.</p>
 
         <p>Tiene obras en colecciones de museos como Artium, el Museo de Bellas Artes de Bilbao, el Museo San Telmo y el Museo Diocesano de Donostia, los Gobiernos Balear y Vasco, las Juntas Generales de Bizkaia y los ayuntamientos de Bilbao, Donostia, Eibar, Ceutí (Murcia) y Pinto (Madrid). También en entidades privadas como el Colegio de Ingenieros de Caminos del País Vasco, Bancaixa de Barcelona y Valencia, y Kutxabank, así como en colecciones particulares.</p>
 
         <p>En febrero de 2024 surgen nuevos problemas de salud, lo que no impide que siguiera con su actividad creativa, adaptándose a la nueva realidad con enorme fortaleza y calidad humana. José Zugasti fallece en su domicilio el 14 de diciembre de 2024, rodeado del cariño de su familia.</p>
+
+        <figure class="bio-fig"><div class="pics"><img src="assets/img/bio-taller-ultimos-anos.jpg" alt="José Zugasti en su taller, en sus últimos años" loading="lazy" decoding="async"></div><figcaption>José Zugasti en su taller, en sus últimos años</figcaption></figure>
       </div>
 
       <aside class="bio-side">
-        <figure class="portrait">
-          <img src="assets/img/retrato.jpg" alt="José Zugasti en su taller" loading="lazy" decoding="async">
-          <figcaption>José Zugasti en su taller</figcaption>
-        </figure>
-        <figure class="portrait" style="margin-top:1.4rem;">
-          <img src="assets/img/retrato-estudio.jpg" alt="José Zugasti en su taller, 2023" loading="lazy" decoding="async">
-          <figcaption>José Zugasti en su taller, 2023</figcaption>
-        </figure>
-        <dl class="facts">
+        <dl class="facts" style="margin-top:0;">
           <dt>Nacimiento</dt>
           <dd>Eibar, Gipuzkoa · 1952</dd>
           <dt>Formación</dt>
