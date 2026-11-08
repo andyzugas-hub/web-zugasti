@@ -9,6 +9,16 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+  .page-main.fund-main{ padding-top: 0; }
+  .fund-bg{ position:relative; min-height: 100vh; padding: calc(4.6rem + clamp(3rem,7vw,6rem)) 0 clamp(4rem,8vw,7rem);
+    background: #fff url("assets/img/fundacion-fondo.jpg") center bottom / 100% auto no-repeat; }
+  .fund-panel{ max-width: 72ch; background: rgba(255,255,255,0.88); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px);
+    padding: clamp(1.6rem,3.5vw,2.8rem); box-shadow: 0 10px 40px rgba(0,0,0,0.06); }
+  .fund-panel .section-head{ margin-bottom: clamp(1.6rem,3vw,2.4rem); }
+  .fund-panel p:last-child{ margin-bottom:0; }
+  @media (max-aspect-ratio: 4/3){ .fund-bg{ background-size: cover; background-position: 70% bottom; } }
+</style>
 </head>
 <body>
 <header class="site">
@@ -31,21 +41,23 @@
   <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">MENU</button>
 </header>
 
-<main class="page-main">
-  <section class="bio reveal">
+<main class="page-main fund-main">
+  <section class="bio fund-bg">
     <div class="wrap">
+     <div class="fund-panel reveal">
       <div class="section-head">
         <div class="eyebrow">09 · Fundación</div>
         <h2>Fundación José Zugasti Fundazioa</h2>
       </div>
 
-      <div style="max-width: 72ch;">
+      <div>
         <p class="lead">La Fundación José Zugasti Fundazioa nace con el propósito de preservar, proteger, investigar y difundir la obra y el legado del escultor y artista multidisciplinar José Zugasti, promoviendo el conocimiento de su aportación al arte contemporáneo.</p>
 
         <p>Entre sus fines se encuentran la organización de exposiciones, actividades culturales y educativas, la conservación de su patrimonio artístico, bibliográfico y documental, así como el impulso de la investigación, la creatividad y la colaboración con otras instituciones culturales. La Fundación desarrolla su actividad con vocación de servicio público, contribuyendo a acercar el arte y la cultura a la sociedad.</p>
 
         <p>La sede de la Fundación se encuentra en el Taller de José Zugasti, un espacio que constituye el núcleo de conservación, estudio y difusión de su obra.</p>
       </div>
+     </div>
     </div>
   </section>
 </main>
