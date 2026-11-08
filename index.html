@@ -13,6 +13,12 @@
   .hero .tagline.poem{ font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.22rem, 1.7vw, 1.45rem); line-height: 1.55; color: var(--ink); max-width: 30ch; padding-left: 1.4rem; border-left: 1px solid var(--oxide); }
   .hero .tagline.poem p{ margin: 0 0 0.9rem; }
   .hero .tagline.poem footer{ font-style: normal; margin-top: 1rem; }
+  .hero-grid{ display:grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); column-gap: clamp(2rem,5vw,4.5rem); align-items:start; }
+  .hero-grid > .hero-eyebrow{ grid-column: 1 / -1; }
+  .hero-photo{ margin:0; width:100%; max-width: 440px; justify-self: center; position:relative; margin-top: 0.3rem; }
+  .hero-grid .tagline.poem{ margin-top: 0; }
+  .hero-photo img{ display:block; width:100%; height:auto; box-shadow: 0 10px 34px rgba(0,0,0,0.10); }
+  @media (max-width: 860px){ .hero-grid{ grid-template-columns:1fr; } .hero-photo{ justify-self: start; right:0; margin-top: 2.4rem; } }
 </style>
 </head>
 <body>
@@ -41,14 +47,17 @@
 
 <section class="hero" id="top">
   <img class="hero-visual" src="assets/img/portada.jpg" alt="Obra de José Zugasti" loading="eager" decoding="async">
-  <div class="wrap hero-copy">
+  <div class="wrap hero-copy hero-grid">
     <div class="eyebrow hero-eyebrow">Artista multidisciplinar</div>
+   <div>
     <blockquote class="tagline poem">
       <p>“Me preocupa especialmente la falta de sentido, yo no llegué al Arte para crear envases….</p>
       <p>….Deseo hacer Arte para encontraros, llegar a ser Cultura para vivir en ese abrazo….”</p>
       <footer>José Zugasti, 1982</footer>
     </blockquote>
     <div class="years">1952 - 2024</div>
+   </div>
+   <figure class="hero-photo"><img src="assets/img/portada-jose.jpg" alt="José Zugasti en su taller" loading="lazy" decoding="async"></figure>
   </div>
 </section>
 
