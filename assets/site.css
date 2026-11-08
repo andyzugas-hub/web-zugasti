@@ -80,7 +80,7 @@ header.site{
 .firma-mark{ height: 28px; width: auto; display:block; }
 .header-actions{ display:flex; align-items:center; gap: clamp(1rem,2vw,1.8rem); }
 nav.links{ display:flex; gap: clamp(0.8rem,1.8vw,1.7rem); font-family: var(--mono); font-size:0.72rem; letter-spacing:0.05em; text-transform: uppercase; }
-nav.links a{ text-decoration:none; opacity:0.85; position:relative; }
+nav.links a{ text-decoration:none; opacity:0.85; position:relative; white-space:nowrap; }
 nav.links a:hover{ opacity:1; color: var(--oxide-dim); }
 nav.links a::after{
   content:""; position:absolute; left:0; right:0; bottom:-5px; height:1px;
@@ -91,7 +91,7 @@ nav.links a:hover::after,
 nav.links a.is-active::after{ transform: scaleX(1); }
 .nav-toggle{ display:none; background:none; border:1px solid currentColor; color:inherit; font-family:var(--mono); font-size:0.7rem; padding:0.4rem 0.7rem; letter-spacing:0.08em; cursor:pointer; }
 
-@media (max-width: 880px){
+@media (max-width: 1120px){
   nav.links{
     position: fixed; inset: 0; background: #fff; color: var(--ink);
     flex-direction: column; justify-content:center; align-items:flex-start;
