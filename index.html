@@ -10,15 +10,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;1,9..144,400;1,9..144,500&family=Archivo:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
 <style>
-  .hero-grid{ display:grid; grid-template-columns: minmax(0,0.85fr) minmax(0,1.15fr); gap: clamp(2rem,5vw,4.5rem); align-items:start; }
-  .hero-video .eyebrow{ color: var(--oxide-dim); margin-bottom:1.4rem; }
-  .hero-video p{ color:#3a352a; max-width: 58ch; margin: 0 0 1rem; }
-  .video-frame{ position:relative; width:100%; aspect-ratio:16/9; margin-top:1.6rem; background:#000; }
-  .video-frame iframe{ position:absolute; inset:0; width:100%; height:100%; border:0; }
   .hero .tagline.poem{ font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.22rem, 1.7vw, 1.45rem); line-height: 1.55; color: var(--ink); max-width: 30ch; padding-left: 1.4rem; border-left: 1px solid var(--oxide); }
   .hero .tagline.poem p{ margin: 0 0 0.9rem; }
   .hero .tagline.poem footer{ font-style: normal; margin-top: 1rem; }
-  @media (max-width: 860px){ .hero-grid{ grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -35,6 +29,7 @@
       <a href="premios.html">Premios</a>
       <a href="exposiciones.html">Exposiciones</a>
       <a href="prensa.html">Prensa</a>
+      <a href="entrevistas.html">Entrevistas</a>
       <a href="taller.html">Taller</a>
       <a href="fundacion.html">Fundación</a>
       <a href="#contacto">Contacto</a>
@@ -45,8 +40,7 @@
 
 <section class="hero" id="top">
   <img class="hero-visual" src="assets/img/portada.jpg" alt="Obra de José Zugasti" loading="eager" decoding="async">
-  <div class="wrap hero-copy hero-grid">
-   <div>
+  <div class="wrap hero-copy">
     <div class="eyebrow hero-eyebrow">Artista multidisciplinar</div>
     <blockquote class="tagline poem">
       <p>“Me preocupa especialmente la falta de sentido, yo no llegué al Arte para crear envases….</p>
@@ -54,15 +48,6 @@
       <footer>José Zugasti, 1982</footer>
     </blockquote>
     <div class="years">1952 - 2024</div>
-   </div>
-   <div class="hero-video">
-    <div class="eyebrow">Quincena Musical 2024</div>
-    <p>José Zugasti fue el autor del cartel de la 85ª Quincena Musical de San Sebastián, en 2024. Fue uno de sus últimos trabajos: su salud ya era muy frágil, y falleció el 14 de diciembre de ese mismo año.</p>
-    <p>El festival presentó el cartel con este vídeo, un emotivo recorrido por su trayectoria artística.</p>
-    <div class="video-frame">
-      <iframe src="https://www.youtube-nocookie.com/embed/3RCOkg8Fx1E?rel=0" title="Quincena Musical 2024: José Zugasti" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </div>
-   </div>
   </div>
 </section>
 
